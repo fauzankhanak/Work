@@ -1,0 +1,6 @@
+---
+
+   - name: Creating elk docker container using docker-compose file
+     command: docker-compose run elk.yml
+     args:
+       chdir /home/fauzan/work/roles/elk/templates

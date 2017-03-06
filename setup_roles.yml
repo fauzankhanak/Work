@@ -1,0 +1,16 @@
+---
+
+  - name: Start wordpress and ELK docker
+    remote_user: root
+
+    hosts: 
+    roles:
+      - common
+      - elk
+
+
+
+    hosts:
+    roles:
+      - common
+      - wordpress

@@ -1,0 +1,17 @@
+---
+
+   - hosts: localhost
+     connection: local
+     gather_facts: false
+     vars_files:
+       - /home/fauzan/work/group_vars/all
+
+     tasks:
+
+       - include: /home/fauzan/work/AWSinstance/aws-launch.yml
+                  Server={{ elk.name_tag }}
+                  env={{ elk.env }}
+
+       - include: /home/fauzan/work/AWSinstance/aws-launch.yml
+                  Server={{ wordpress.name_tag }}
+                  env={{ wordpress.env }}

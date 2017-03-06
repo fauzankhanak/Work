@@ -1,0 +1,19 @@
+---
+  - name: Launch instnace task
+    ec2:
+     aws_access_key: "{{ }}"
+     aws_secret_key: "{{ }}"
+     key_name: "{{ }}"
+     instance_type: "{{ }}"
+     volumes:
+       - device_name: /dev/sda1
+         volume_size: "{{ volume_size }}"
+     instance_tags:
+       Name: "{{ Server }}"
+       Environment: "{{ env }}"
+     image: "{{ }}"
+     wait: true
+     group_id: "{{ }}"
+     region: "{{ }}"
+     vpc_subnet_id: "{{ }}"
+    register: ec2 

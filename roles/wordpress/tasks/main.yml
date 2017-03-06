@@ -1,0 +1,6 @@
+---
+
+  - name: Creating wordpress container using docker-compose file
+    command: docker-compose run wordpress.yml
+    args:
+      chdir: /home/fauzan/work/roles/wordpress/templates

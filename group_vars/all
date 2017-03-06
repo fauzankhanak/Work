@@ -1,0 +1,18 @@
+# AWS specific variables
+
+ec2_access_key:
+ec2_secret_key:
+ec2_region:
+ec2_zone:
+ec2_image:
+ec2_instance_type:
+ec2_keypair:
+ec2_security_group:
+volume_size:
+
+elk:
+  name_tag: elk-server
+  env: test
+wordpress:
+  name_tag: wordpress-server
+  env: test

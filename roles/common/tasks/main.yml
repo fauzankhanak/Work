@@ -1,0 +1,4 @@
+---
+
+  - name: Installing docker on all instance
+    script: /home/fauzan/work/roles/templates/script.sh
